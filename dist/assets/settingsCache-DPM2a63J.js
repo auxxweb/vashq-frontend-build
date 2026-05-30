@@ -1,0 +1,1 @@
+let n=null,s=0,t=null;const l=5*60*1e3;async function c(i){const a=Date.now();return n&&a-s<l?n:t||(t=i.get("/admin/settings").then(e=>(e.data?.success&&e.data.settings&&(n=e.data.settings,s=Date.now()),n)).finally(()=>{t=null}),t)}export{c as fetchBusinessSettings};
