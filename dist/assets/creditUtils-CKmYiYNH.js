@@ -1,7 +1,0 @@
-function a(t){return Math.round((Number(t)||0)*100)/100}function m(t,n){const e=Math.max(0,Number(t)||0),r=Math.max(0,Number(n)||0);return Math.min(r,e)}function l(t){return a((Number(t?.paymentCashAmount)||0)+(Number(t?.paymentOnlineAmount)||0))}function o(t){const n=m(t?.finalAmount,t?.advancePayment),e=Number(t?.amountCollectedLater)||0;return a(n+l(t)+e)}function c(t){const n=Math.max(0,Number(t?.finalAmount)||0);return a(Math.max(0,n-o(t)))}const d={PAID:"Paid",PARTIALLY_PAID:"Partially paid",OUTSTANDING:"Amount due"};function f(t){if(!t)return null;if(t.settlementMode!=="CREDIT"&&t.paymentStatus==="RECEIVED")return"PAID";if(t.settlementMode!=="CREDIT"&&t.paymentStatus==="PENDING")return null;const n=Number(t.outstandingAmount),e=Number.isFinite(n)?n:c(t),r=o(t);return e<=.02?"PAID":r<=.02?"OUTSTANDING":"PARTIALLY_PAID"}function i(t){return t==="PAID"?"success":t==="PARTIALLY_PAID"?"warning":t==="OUTSTANDING"?"destructive":"secondary"}function A({businessName:t,customerName:n,formattedOutstanding:e,invoiceNumbers:r=[]}){const u=r.filter(Boolean).slice(0,8).join(", "),s=r.length>8?` (+${r.length-8} more)`:"";return`Hi ${n||"there"},
-
-This is ${t||"us"}. Your amount due is ${e}.`+(u?`
-
-Invoice(s): ${u}${s}`:"")+`
-
-Please arrange payment at your convenience. Thank you!`}function I(t="coll"){return typeof crypto<"u"&&crypto.randomUUID?`${t}-${crypto.randomUUID()}`:`${t}-${Date.now()}-${Math.random().toString(36).slice(2,10)}`}export{d as C,A as b,i as c,f as d,I as n,a as r};
