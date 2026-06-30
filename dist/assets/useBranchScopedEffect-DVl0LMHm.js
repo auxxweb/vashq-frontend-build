@@ -1,0 +1,1 @@
+import{r as t}from"./vendor-B5SItlqH.js";import{w as c}from"./index-1SsDpia2.js";function o(){const e=c();return e?e.scope==="all"?"all":e.activeBranchId||"none":"none"}function u(e,r=[]){const n=o();t.useEffect(()=>e(),[n,...r])}export{u as a,o as u};
