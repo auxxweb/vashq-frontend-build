@@ -1,0 +1,1 @@
+import"./motion-Bp917_L6.js";import"./index-DUSbptVz.js";import"./select-BF53hfmu.js";function i(o){if(!o)return"";const r=[o.brand,o.model,o.color].filter(Boolean).join(" · ");return r?`${o.carNumber} · ${r}`:o.carNumber}export{i as f};
