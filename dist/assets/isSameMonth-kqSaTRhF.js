@@ -1,1 +1,0 @@
-import{a as r}from"./format-Dz8wa_8I.js";import{t as o}from"./toDate-qOSwr3PX.js";function u(a,t){const e=r(a),n=r(t);return+e==+n}function i(a){const t=o(a),e=t.getMonth();return t.setFullYear(t.getFullYear(),e+1,0),t.setHours(23,59,59,999),t}function c(a,t){const e=o(a),n=o(t);return e.getFullYear()===n.getFullYear()&&e.getMonth()===n.getMonth()}export{u as a,i as e,c as i};

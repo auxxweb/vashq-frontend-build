@@ -1,1 +1,0 @@
-function t(r){return r===""||r===void 0||r===null}function u(r,n=!0){return n?r===0||r==="0":!1}function e(r,{blankZero:n=!0}={}){return t(r)||u(r,n)?"":r}function f(r,{blankZero:n=!0}={}){if(t(r))return"";const i=Number(r);return!Number.isFinite(i)||n&&i===0?"":String(r)}export{f as a,e as d,t as i,u as s};
