@@ -1,0 +1,1 @@
+import{r as t}from"./motion-Bp917_L6.js";function l(){const e=t.useRef(!1),[s,r]=t.useState(!1),n=t.useCallback(async u=>{if(e.current)return{skipped:!0};e.current=!0,r(!0);try{return{skipped:!1,result:await u()}}finally{e.current=!1,r(!1)}},[]);return{pending:s,run:n}}export{l as u};
