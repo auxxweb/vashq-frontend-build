@@ -1,1 +1,0 @@
-import{r as t}from"./motion-Bp917_L6.js";import{N as c}from"./index-BArWSHqy.js";function o(){const e=c();return e?e.scope==="all"?"all":e.activeBranchId||"none":"none"}function u(e,r=[]){const n=o();t.useEffect(()=>e(),[n,...r])}export{u as a,o as u};
