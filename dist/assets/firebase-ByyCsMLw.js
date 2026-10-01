@@ -1,0 +1,1 @@
+import{i as a}from"./firebase-89Vw5xQN.js";const e={apiKey:"AIzaSyDimbvH4urYW-NwcB8v4VJvjki704ECQNk",authDomain:"vashq-2ef10.firebaseapp.com",projectId:"vashq-2ef10",storageBucket:"vashq-2ef10.firebasestorage.app",messagingSenderId:"726465587727",appId:"1:726465587727:web:d6326e3920da5f037e917a"},p=a(e);export{p as a};
