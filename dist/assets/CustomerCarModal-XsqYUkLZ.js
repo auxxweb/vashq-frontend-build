@@ -1,0 +1,1 @@
+import"./motion-Bp917_L6.js";import"./index-BbdJI4PU.js";import"./VehicleNumberInput-BzU_Tu-T.js";import"./select-1n9BZFsO.js";function n(o){if(!o)return"";const r=[o.brand,o.model,o.color].filter(Boolean).join(" · ");return r?`${o.carNumber} · ${r}`:o.carNumber}export{n as f};
