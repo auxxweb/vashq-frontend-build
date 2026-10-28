@@ -1,0 +1,1 @@
+function a(e){return e?.servicesRemaining||e?.servicesIncluded||[]}const s="No services are attached to this package, so visits cannot be recorded. Add services to the package template and contact support to update packages already sold.";export{s as N,a as p};
