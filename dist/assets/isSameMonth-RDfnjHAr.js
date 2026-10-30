@@ -1,0 +1,1 @@
+import{b as o,t as r}from"./format-BWhOgnCZ.js";function f(e,n){const t=o(e),a=o(n);return+t==+a}function i(e,n){const t=r(e),a=r(n);return t.getFullYear()===a.getFullYear()&&t.getMonth()===a.getMonth()}export{f as a,i};
