@@ -1,0 +1,1 @@
+import{a as e,d as i}from"./downloadPdf-DqhcQmHb.js";async function n(t="estimate.pdf",a={}){if(a.token){const d=new URLSearchParams({token:a.token});await e(`/public/estimate/${a.id}/pdf?${d.toString()}`,t);return}if(!a.id)throw new Error("Estimate not found");await i(`/admin/crm/estimates/${a.id}/pdf`,{filename:t})}export{n as d};
