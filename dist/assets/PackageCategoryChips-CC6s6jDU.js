@@ -1,1 +1,0 @@
-import{j as e}from"./motion-Bp917_L6.js";import{R as t}from"./index-C_6LBznG.js";function m({categories:r,className:n}){return r?.length?e.jsx("div",{className:t("flex flex-wrap gap-1",n),children:r.map(a=>e.jsx("span",{className:"rounded-full bg-primary/10 px-2 py-0.5 text-[11px] font-medium text-primary",children:a.name},String(a._id)))}):null}export{m as P};
